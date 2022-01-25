@@ -7,10 +7,12 @@ Make efficient the stock analysis by refactoring the code. The main purpose is t
 ## Analysis and Challenges
 ### Analysis of Outcomes Based on Launch Date
 Based on the launch date success we can see some trends during the summer. This could be a good approach of when can launch a campaign to have a good success. But also we can notice that the total of campaigns launched per month are higher during the summer. So it is little tricky this analysis becuase we can say that is better the summer because of the number of success. However if we deep inside, we can see that is 50/50 chance to succes or fail no matter the month. Almost each month we can notice almost a 50% of success over failure so we can not be positive to say that the rest of the year (not summer) we can fail more. It is a false negative.
-![image](https://user-images.githubusercontent.com/96077418/147439127-2c07cc15-9533-40b4-b8a3-a26e3495dd51.png)
+
+![VBA_Challenge_2017 Unrefactored](https://user-images.githubusercontent.com/96077418/151065539-2fb89c7f-d0db-4d1e-8030-e1cee4a04ae1.png)
 ### Analysis of Outcomes Based on Goals
 This analysis show us how the goals are related on the amount of money invested on each campaing. The analaysis tell us that the success of the campaigns start to decrease when the goals are higher. It is an expected trend because if the goal is low, the changes of the success increase and when you are expecting higher demands you will increase the possibility of failures. However we can notice than specific campaigns are not following those trends, so for those campaigns we can not be very confidents on the relations.
-![image](https://user-images.githubusercontent.com/96077418/147438744-ba59acd6-0552-4470-b1d6-ddfb6df0409d.png)
+![VBA_Challenge_2018 Unrefactored](https://user-images.githubusercontent.com/96077418/151065982-c990d3c3-77f1-4b49-867b-3afe337a7cc6.png)
+
 ### Challenges and Difficulties Encountered
 The difficultes we encountered is how to stablish a correct range of goals classification. We should work better on determine the ranges of amount to have a better analysis approach of the success based on goals. Talking about the launch time, we also notice that it change according to the years. Some years we have more campaigns and more succes than the others. Also we can infer that we have more succes on the summer because of the free time of the people. Which is an important impact of the success of each campaigns.
 Also the situations that are involved in each year, as this time whith the pandemics, that could show false negatives.
