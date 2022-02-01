@@ -9,10 +9,10 @@ Make efficient the stock analysis by refactoring the code. The main purpose is t
 
 Here are the ways we work on our codes:
 
-Without refactoring
+- **Without refactoring**
 ![VBA_Challenge_Unrefactored](https://user-images.githubusercontent.com/96077418/151905040-4c29e015-b35c-4e9b-b8a9-b80062d82129.png)
 
-Refactored
+- **Refactored**
 ![VBA_Challenge](https://user-images.githubusercontent.com/96077418/151905047-d80ac043-3bc7-4f13-9162-678128f120cf.png)
 
 If we see both pictures above, we can see that the unrefactored one has a code that is not simple to read. It shows steps that looks more complex even if they are very simple (talking about functionality). And by the other hand, the second image it is easier to read, we have a good structure on the code, simple steps and details on each function we want to do. If I am a new coder I can have a better approach on the second image than the first one, I can work better in the refactored code because I can understand easyly the goal of that script. I don't have to spend to much time in finding what is the purpose of hte code, like in the first image.
@@ -44,16 +44,29 @@ The big and one challenge we face was the time spent on refactoring the code. Yo
 ### Execution times original and refactored VBA script
 
 Here we show the response times we mentioned before:
-It is very clear that the refactored code it is more effcient than the unrefactored one.
-The times cannot be to representative because the amount of information is almost the same. But even that, it is clear the performance on both codes.
 
-
+- **Unrefactored response time 2017**
 ![VBA_Challenge_2017 Unrefactored](https://user-images.githubusercontent.com/96077418/151065539-2fb89c7f-d0db-4d1e-8030-e1cee4a04ae1.png)
+
+- **Refactored response time 2017**
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/96077418/151900692-b51e7d73-2c6c-46fb-98df-5a756fd2010f.png)
+
+- **Unrefactored response time 2018**
 ![VBA_Challenge_2018 Unrefactored](https://user-images.githubusercontent.com/96077418/151900708-490a3908-6d7c-4e9b-b003-e2ba8c7c64a5.png)
+
+- **Refactored response time 2018**
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/96077418/151900718-4cc0c80d-dff2-4f78-a86e-0a625302fe09.png)
 
-### Advantages and disadvantages of refactoring code
+It is very clear that the refactored code it is more efficient than the unrefactored one.
+The times cannot be to representative because the amount of information is almost the same. But even that, it is clear the performance on both codes.
+Nevertheless I am sure that if we increase the information data base with more stocks, we will see how the response time starts to increase exponentially in the unrefactored code. So, whith this parameters we can asume the importance of the refactoring code whith solid mesured results of efficiency.
+
+In addition if we pay attention to the response time when we analyze the 2018 stocks, we can notice more clear difference between the refactored and the unrefactored code. It is not very clear for me the reasons of that but we can determine that the information we need to handle in the 2018 is more difficult or has more functions to be runned by our code because of the variability of the data. So to be more clear, this is why is very important the refactoring on the codes. If we handle complex data with so many variations, we will bring up issues during the processing of the code if we not make it clean or refactored.
+
+## Advantages and disadvantages of refactoring code
+
+Now that we talked about the anaylsis and results of the importance refactoring our codes, we can determina some pros and cons about if it is necessary to refactor our code or not. According to the information we collected with this project and the different performances we face working with both codes, we can establish the following conclusions:
+
 **The advantages**
 
 - Reduce the technical issues and easy to mantain. Refactoring our code will allow us to reduce the possibilities of have long time of responses related to a bad performance of the code. Also it will be esay to mantain in the way we can find issues or improve the steps to reach our goals.
@@ -68,4 +81,4 @@ The times cannot be to representative because the amount of information is almos
 - Get lost in the way. Spending to much time in refactoring our code, we can lose the idea of the goal. Even worst, we can change the code in a worst way missing things we want it and changing the course of our needs. Of course we can save the code before work on it, but there will be always the risk of lose information.
 
 ## Conclusion
-In conclusion, an accoridng to the results gived to Steve(our customer), refactoring is a clue step in the VBA coding script.The pros are more than the cons: **KEEP IT SIMPLE!**. The added value refactoring our code is essencial on this kind of coding, we need to spend time cleaning the codes to improve the needs of our customers, also doing this we will be better on this. So it is a win to win. The disdavantages are thing we can work on, there are not breaking points to avoid the refactoring. All is about the effort we need to take on our code. So you need to refactore if you want to bring VBA script code solutions for stock analysis or any analysis of big data you are thinking.
+In conclusion, an accoridng to the results gived to Steve(our customer), refactoring is a main step in the VBA coding script.The pros are more relevant than the cons: **KEEP IT SIMPLE!**. The value added with factoring our code is essencial on this kind of coding, we need to spend time cleaning the codes to improve the needs of our customers, also to invest the time on it will increase our vision on codes and make us clear thinkers. So it is a win to win. The disdavantages are thing we can work on, there are not breaking points to avoid the refactoring. All is about the effort we need to take on our code. So you need to refactore if you want to bring VBA script code solutions for stock analysis or any analysis of big data you are thinking.
