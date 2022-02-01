@@ -28,7 +28,11 @@ The results that Steve will get using or cleaner code.
 If we have a ook on the pictures below, we can see the information that Steve will get.
 With three buttons he can decide in which stocks his parents could invest without spend time, days, months looking a large file of information.
 They can do it in seconds.
-So, Steve can see which stocks are better to invest on but also which year has best performance
+
+So, Steve can see which stocks are better to invest on but also which year has best performance.
+We can see that 2017 was a better year than the 2018, so they can make a bigger analysis whith more information on th stocks for 2017.
+The returns we show in 2017 are so much better and also more stocks with possitive returns than the 2018.
+
 ![VBA_Challenge_2017_Outputs](https://user-images.githubusercontent.com/96077418/151905008-1e96122c-7e17-4e0f-b444-a505ad72346f.png)
 ![VBA_Challenge_2018_Outputs](https://user-images.githubusercontent.com/96077418/151905022-2f51fbf2-d1fb-44c3-821b-49d94fb45aff.png)
 
@@ -38,6 +42,12 @@ The big and one challenge we face was the time spent on refactoring the code. Yo
 
 ## Results
 ### Execution times original and refactored VBA script
+
+Here we show the response times we mentioned before:
+It is very clear that the refactored code it is more effcient than the unrefactored one.
+The times cannot be to representative because the amount of information is almost the same. But even that, it is clear the performance on both codes.
+
+
 ![VBA_Challenge_2017 Unrefactored](https://user-images.githubusercontent.com/96077418/151065539-2fb89c7f-d0db-4d1e-8030-e1cee4a04ae1.png)
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/96077418/151900692-b51e7d73-2c6c-46fb-98df-5a756fd2010f.png)
 ![VBA_Challenge_2018 Unrefactored](https://user-images.githubusercontent.com/96077418/151900708-490a3908-6d7c-4e9b-b003-e2ba8c7c64a5.png)
