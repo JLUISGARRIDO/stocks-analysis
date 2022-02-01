@@ -5,27 +5,57 @@ Provide facilities to Steve (our customer) handling large stock of data in behal
 ### Purpose
 Make efficient the stock analysis by refactoring the code. The main purpose is to edit our initial VBA code and measure the performance. Compare both running times (initial VBA vs refactor VBA) to determine the advantages or disadvantages of refactoring code. Then establish the pros and cons that apply refactoring our initial VBA code. Finally, according to the feedback of response improvement with refactoring, analyze the stock market in 2017 and 2018 and the results of our data analysis.
 ## Analysis and Challenges
-### Analysis of Outcomes Based on Launch Date
-Based on the launch date success we can see some trends during the summer. This could be a good approach of when can launch a campaign to have a good success. But also we can notice that the total of campaigns launched per month are higher during the summer. So it is little tricky this analysis becuase we can say that is better the summer because of the number of success. However if we deep inside, we can see that is 50/50 chance to succes or fail no matter the month. Almost each month we can notice almost a 50% of success over failure so we can not be positive to say that the rest of the year (not summer) we can fail more. It is a false negative.
+### Analysis of Refactoring Code
 
-![VBA_Challenge_2017 Unrefactored](https://user-images.githubusercontent.com/96077418/151065539-2fb89c7f-d0db-4d1e-8030-e1cee4a04ae1.png)
-### Analysis of Outcomes Based on Goals
-This analysis show us how the goals are related on the amount of money invested on each campaing. The analaysis tell us that the success of the campaigns start to decrease when the goals are higher. It is an expected trend because if the goal is low, the changes of the success increase and when you are expecting higher demands you will increase the possibility of failures. However we can notice than specific campaigns are not following those trends, so for those campaigns we can not be very confidents on the relations.
-![VBA_Challenge_2018 Unrefactored](https://user-images.githubusercontent.com/96077418/151065982-c990d3c3-77f1-4b49-867b-3afe337a7cc6.png)
+Here are the ways we work on our codes:
+
+Without refactoring
+![VBA_Challenge_Unrefactored](https://user-images.githubusercontent.com/96077418/151905040-4c29e015-b35c-4e9b-b8a9-b80062d82129.png)
+
+Refactored
+![VBA_Challenge](https://user-images.githubusercontent.com/96077418/151905047-d80ac043-3bc7-4f13-9162-678128f120cf.png)
+
+If we see both pictures above, we can see that the unrefactored one has a code that is not simple to read. It shows steps that looks more complex even if they are very simple (talking about functionality). And by the other hand, the second image it is easier to read, we have a good structure on the code, simple steps and details on each function we want to do. If I am a new coder I can have a better approach on the second image than the first one, I can work better in the refactored code because I can understand easyly the goal of that script. I don't have to spend to much time in finding what is the purpose of hte code, like in the first image.
+
+In addition when we run both codes, the program works faster with the second one than the first one. That is because it is also simple for the program to read the functions of the code and the program also doesn't needs to repeat functions like in the firs unrefactored code. That give us an efficient code and with a best response in behavior of the data analysis we need to do. The refactored code even works faster than the first one even we are handling large amounts of informations.
+
+It is important to mention the time of response of each code (which we ll se lines below) but also the details on the refactored code. The details in green that describe the goal of each function. Why is so important? Because that bring us an architechture of what the coder is doing and how we can improve the work.
+
+### Stock performance between 2017 and 2018
+
+Once the unrefactored and the refactored codes where analyzed and compare, we can proceed to our data analysis.
+The results that Steve will get using or cleaner code.
+If we have a ook on the pictures below, we can see the information that Steve will get.
+With three buttons he can decide in which stocks his parents could invest without spend time, days, months looking a large file of information.
+They can do it in seconds.
+So, Steve can see which stocks are better to invest on but also which year has best performance
+![VBA_Challenge_2017_Outputs](https://user-images.githubusercontent.com/96077418/151905008-1e96122c-7e17-4e0f-b444-a505ad72346f.png)
+![VBA_Challenge_2018_Outputs](https://user-images.githubusercontent.com/96077418/151905022-2f51fbf2-d1fb-44c3-821b-49d94fb45aff.png)
 
 ### Challenges and Difficulties Encountered
-The difficultes we encountered is how to stablish a correct range of goals classification. We should work better on determine the ranges of amount to have a better analysis approach of the success based on goals. Talking about the launch time, we also notice that it change according to the years. Some years we have more campaigns and more succes than the others. Also we can infer that we have more succes on the summer because of the free time of the people. Which is an important impact of the success of each campaigns.
-Also the situations that are involved in each year, as this time whith the pandemics, that could show false negatives.
-## Results
 
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-__It is better to launch a campaign in summer according to achieve more outcomes.__
-It seems to be a trend that almost 50% of the campaigns failed, no matter the month of the year. The summer have more campaigns than the rest of the year which means that we are going to have more successful, however the percentage of the rest of the year is telling us that the trend is almost the same all over the year. So the only strongh conclusion is that in May and June we have a more succesful over failed campaigns than the rest of the year, but also that we have a trend which tell us that we have 50/50 chance of a succesfull or failed campaing no matter the month.
-- What can you conclude about the Outcomes based on Goals?
-__The outcomes based on goals have other overwiew. When we start to involve forecast or goals we are putting a limit on the achivements.__ We can notice that the lowest the goal is, we success on the campaign.The highest the goal is, the campaign seems to fail. We can take that conclusion with the left half of the chart wich is more representative. The right half shows less than 5 campaigns per amount of goal, so we don't know exactly what happend on those campaigns.
-- What are some limitations of this dataset?
-The main limitations is the campaings that are not representative and may impact on the results and the analysis. We have some campaigns that failed or succes which are not following the trends or has specific impacts.
-- What are some other possible tables and/or graphs that we could create?
-For a better approach of the project we should add some charts about the relation of the interest of the people depending on the areas or categories of the champaigns. This analysis shoudl give us a better understanding of the successful or fails on the champaigns. But also the ratings of the performances in each subcategory could be helpful on the analytics.
+The big and one challenge we face was the time spent on refactoring the code. You need time to work on the code, look over on how to clean the code to improve the time of response. But it is very important that the time you spend working on the code adds value and not rests it. Once you get a cleaner code, the performance of it will be the best and easy to handle. If you don't refactor the code, you can face some technical issues or and overwork of the machine, and that will be worst because now you wont get the results on time for doing your anaylsys.
+
+## Results
+### Execution times original and refactored VBA script
+![VBA_Challenge_2017 Unrefactored](https://user-images.githubusercontent.com/96077418/151065539-2fb89c7f-d0db-4d1e-8030-e1cee4a04ae1.png)
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/96077418/151900692-b51e7d73-2c6c-46fb-98df-5a756fd2010f.png)
+![VBA_Challenge_2018 Unrefactored](https://user-images.githubusercontent.com/96077418/151900708-490a3908-6d7c-4e9b-b003-e2ba8c7c64a5.png)
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/96077418/151900718-4cc0c80d-dff2-4f78-a86e-0a625302fe09.png)
+
+### Advantages and disadvantages of refactoring code
+**The advantages**
+
+- Reduce the technical issues and easy to mantain. Refactoring our code will allow us to reduce the possibilities of have long time of responses related to a bad performance of the code. Also it will be esay to mantain in the way we can find issues or improve the steps to reach our goals.
+- Easy read. With a cleaner code, it allow us to add or remove features. Other programmers can easily work on our code improving the way it works whithout spending time finding how our code is working. Also the beginners and the pros can work on our code if it is simple and well structured.
+- Efficent response. It leads to improve easily the "architecture" of the code in a way to reduce the response time and to clean the proccess *per se*. We will help our program to work without complex actions to take making it simple and to have an analysis of large data in a very short time.
+- Basis for many codes. If our refactored code is very clean and effcient it will be the basis of new codes. Simple as that.
+
+**The disadvantages**
+
+- Spending time. We need time to expend refactoring the code. We need to spend ours finding a way to make simple and cleaner our code. It sounds good the idea of clean our code but of course it needs time and habilities to improve our architectures. The most we work on the scripst the least time we spend.
+- Expertise. Related to the first disadvantage, we need some kind of expertise to avoid the waste of time in a script that it is hard for us. If the code is not complex we can handle it, but what if our code is very complex one with a lot of functions to do.
+- Get lost in the way. Spending to much time in refactoring our code, we can lose the idea of the goal. Even worst, we can change the code in a worst way missing things we want it and changing the course of our needs. Of course we can save the code before work on it, but there will be always the risk of lose information.
+
 ## Conclusion
-In conclusion the results obtained on this project give us a better approach to take good decisions on which campaign have more possibilities to succeed according on the month, year and the forecasted goals established. However it is important to keep on mind the impact of the interests of the people and the situation of each country at the moment of the launch of the campaigns.
+In conclusion, an accoridng to the results gived to Steve(our customer), refactoring is a clue step in the VBA coding script.The pros are more than the cons: **KEEP IT SIMPLE!**. The added value refactoring our code is essencial on this kind of coding, we need to spend time cleaning the codes to improve the needs of our customers, also doing this we will be better on this. So it is a win to win. The disdavantages are thing we can work on, there are not breaking points to avoid the refactoring. All is about the effort we need to take on our code. So you need to refactore if you want to bring VBA script code solutions for stock analysis or any analysis of big data you are thinking.
